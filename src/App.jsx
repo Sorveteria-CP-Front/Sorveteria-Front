@@ -8,22 +8,29 @@ const produtos = [
     {
         titulo: 'Morango',
         preco: 'R$ 24,90',
+ feature/pagina-App.jsx
         imagem: 'morango',
     },
     {
         titulo: 'Chocolate',
         preco: 'R$ 22,90',
+ feature/pagina-App.jsx
         imagem: 'chocolate',
+
     },
     {
         titulo: 'Baunilha',
         preco: 'R$ 21,90',
+feature/pagina-App.jsx
         imagem: 'baunilha',
+
     },
     {
         titulo: 'Menta',
         preco: 'R$ 25,90',
+ feature/pagina-App.jsx
         imagem: 'menta',
+
     },
 ]
 

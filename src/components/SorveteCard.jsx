@@ -1,10 +1,19 @@
 const SorveteCard = ({
+ feature/pagina-App.jsx
     titulo = 'Sorvete',
     preco = 'R$ 24,90',
     imagem,
 }) => {
     return (
         <div className="group relative w-full overflow-hidden rounded-[28px] border border-blue-100 bg-white shadow-[0_18px_40px_rgba(59,130,246,0.12)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_22px_52px_rgba(236,72,153,0.18)]">
+=======
+    titulo = 'Sorvete de Morango',
+    preco = 'R$ 24,90',
+    imagem = 'https://images.unsplash.com/photo-1570197788417-0e823ef4b269?auto=format&fit=crop&w=900&q=80',
+}) => {
+    return (
+        <div className="group relative w-full max-w-[320px] overflow-hidden rounded-[28px] border border-blue-100 bg-white shadow-[0_18px_40px_rgba(59,130,246,0.12)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_22px_52px_rgba(236,72,153,0.18)]">
+
             <div className="absolute inset-0 bg-gradient-to-br from-blue-100/60 via-white/10 to-pink-100/80" />
 
             <img
