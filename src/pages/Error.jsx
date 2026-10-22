@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom'
 
 const Error = () => {
@@ -21,3 +22,4 @@ const Error = () => {
 }
 
 export default Error
+
