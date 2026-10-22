@@ -1,21 +1,30 @@
 import { Link } from 'react-router-dom'
 
+const navItems = [
+    { label: 'Home', to: '/home' },
+    { label: 'Sorvetes', to: '/sorvetes' },
+    { label: 'Contato', to: '/contato' },
+]
+
 const Header = () => {
     return (
-        <header className="flex justify-between items-center py-6 px-[5%] hover:text-[#F4C2C2]">
-            <h1 className="logo p-2 text-[2rem] font-bold text-amber-50 cursor-pointer transition-all">Blue
-                <span className="text-[#87CEEB] p-1">Ice</span></h1>
-            <nav>
+        <header className="flex items-center justify-between px-[5%] py-6">
+            <Link to="/home" className="logo cursor-pointer p-2 text-[2rem] font-bold text-amber-50 transition-all">
+                Blue<span className="p-1 text-[#87CEEB]">Ice</span>
+            </Link>
+
+            <nav aria-label="Menu principal">
                 <ul className="flex list-none items-center gap-8">
-                    <li>
-                        <Link to="/home" className="text-white text-lg no-underline hover:text-[#95ff00] hover:uppercase transition-all">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/sorvetes" className="text-white text-lg no-underline hover:text-[#87CEEB] hover:uppercase transition-all">Sorvetes</Link>
-                    </li>
-                    <li>
-                        <Link to="/contato" className="text-white text-lg no-underline hover:text-[#87CEEB] hover:uppercase transition-all">Contato</Link>
-                    </li>
+                    {navItems.map(({ label, to }) => (
+                        <li key={to}>
+                            <Link
+                                to={to}
+                                className="text-lg font-bold text-slate-700 no-underline transition-all hover:text-[#0f172a] hover:uppercase"
+                            >
+                                {label}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </header>
