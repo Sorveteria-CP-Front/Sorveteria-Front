@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 const Contato = () => {
@@ -9,3 +10,4 @@ const Contato = () => {
 }
 
 export default Contato
+

@@ -5,7 +5,7 @@ const Error = () => {
         <main className="px-[5%] my-20 grow text-center
      flex flex-col items-center justify-center">
             <h2 className="text-6xl font-bold text-[#f071c5]">404</h2>
-            <p className="text-2xl text-cyan-100 font-semibold mb-2">Ops! Página não encontrada</p>
+            <p className="text-2xl text-cyan-100 font-semibold mb-2">Eita! Sorvete não encontrado</p>
             <p className="text-gray-400 mb-8 max-w-md">
                 Erro, esses sorvetes não estão disponíveis. A página procurada
                 não existe ou foi removida
