@@ -1,0 +1,45 @@
+:root {
+    --color-primary: #ff5ebc;
+    --bg-dark: #0f172a;
+    --text-color: #ffffff;
+    --btn-color: #7dd3fc;
+    --header-bg: rgba(15, 23, 42, 0.8);
+    --linear-bg: linear-gradient(to right, #ff8ec7, #7dd3fc, #ffffff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: 50px !important;
+}
+
+.logo:hover {
+    letter-spacing: 10px;
+    animation: acender 0.05s forwards;
+}
+
+.logo span {
+    padding: 15px;
+}
+
+@keyframes acender {
+    to {
+        color: var(--text-color);
+        text-shadow: 0 0 10px #ff9ed2, 0 0 20px #7dd3fc;
+    }
+}
+
+.titulo {
+    background-image: linear-gradient(to right, #ff5ebc, #7dd3fc, #ffffff);
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    background-clip: text;
+}
+
+.titulo:hover {
+    animation: acender 0.5s forwards;
+}
